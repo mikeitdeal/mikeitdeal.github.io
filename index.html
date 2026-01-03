@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Stok Unit - Mike Palace</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* LOGO BULAT DI TENGAH */
+        .logo-container {
+            margin: 0 auto 30px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo-circle {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 
+                0 0 0 4px rgba(255, 215, 0, 0.3),
+                0 0 0 8px rgba(139, 0, 139, 0.2),
+                0 15px 35px rgba(139, 0, 139, 0.4),
+                0 5px 15px rgba(0, 0, 0, 0.6);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            animation: logoFloat 6s ease-in-out infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease;
+        }
+        
+        @keyframes logoFloat {
+            0%, 100% { 
+                transform: translateY(0) rotate(0deg); 
+                box-shadow: 
+                    0 0 0 4px rgba(255, 215, 0, 0.3),
+                    0 0 0 8px rgba(139, 0, 139, 0.2),
+                    0 15px 35px rgba(139, 0, 139, 0.4),
+                    0 5px 15px rgba(0, 0, 0, 0.6);
+            }
+            50% { 
+                transform: translateY(-15px) rotate(5deg); 
+                box-shadow: 
+                    0 0 0 6px rgba(255, 215, 0, 0.4),
+                    0 0 0 12px rgba(139, 0, 139, 0.3),
+                    0 20px 45px rgba(139, 0, 139, 0.6),
+                    0 10px 25px rgba(0, 0, 0, 0.8);
+            }
+        }
+        
+        .logo-circle:hover {
+            transform: scale(1.1) rotate(10deg);
+            animation-play-state: paused;
+        }
+        
+        .logo-circle::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent,
+                rgba(255, 215, 0, 0.2),
+                rgba(139, 0, 139, 0.3),
+                rgba(255, 215, 0, 0.2),
+                transparent
+            );
+            animation: logoRotate 8s infinite linear;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        @keyframes logoRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .logo-img {
+            width: 85%;
+            height: 85%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            filter: brightness(1.05) contrast(1.1);
+        }
+        
+        .logo-glow {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: radial-gradient(
+                circle,
+                rgba(139, 0, 139, 0.5) 0%,
+                rgba(75, 0, 130, 0.3) 40%,
+                transparent 70%
+            );
+            z-index: 0;
+            animation: pulseGlow 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { 
+                opacity: 0.5; 
+                transform: scale(1); 
+            }
+            50% { 
+                opacity: 0.8; 
+                transform: scale(1.1); 
+            }
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #DA70D6, #9370DB, #8A2BE2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: blink 3s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .description {
+            color: #b0b0ff;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        /* Styling untuk semua link */
+        .link-container {
+            width: 100%;
+            margin: 15px 0;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 18px 25px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 0.5s ease-out forwards;
+            opacity: 0;
+            backdrop-filter: blur(5px);
+        }
+        
+        /* Animasi masuk bertahap untuk link */
+        .link-item:nth-child(1) { animation-delay: 0.2s; }
+        .link-item:nth-child(2) { animation-delay: 0.4s; }
+        .link-item:nth-child(3) { animation-delay: 0.6s; }
+        .link-item:nth-child(4) { animation-delay: 0.8s; }
+        
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .link-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .link-item::after {
+            content: '→';
+            position: absolute;
+            right: 20px;
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        
+        .link-item:hover::after {
+            right: 15px;
+            opacity: 1;
+        }
+        
+        /* Warna berbeda untuk setiap link */
+        .link-whatsapp {
+            background: linear-gradient(90deg, rgba(37, 211, 102, 0.15), rgba(37, 211, 102, 0.05));
+            border-left: 5px solid #25D366;
+        }
+        
+        .link-stok {
+            background: linear-gradient(90deg, rgba(0, 176, 155, 0.15), rgba(0, 176, 155, 0.05));
+            border-left: 5px solid #00b09b;
+        }
+        
+        .link-tiktok {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05));
+            border-left: 5px solid #000000;
+        }
+        
+        .link-instagram {
+            background: linear-gradient(90deg, rgba(225, 48, 108, 0.15), rgba(225, 48, 108, 0.05));
+            border-left: 5px solid #e1306c;
+        }
+        
+        .link-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .whatsapp .link-icon {
+            background: rgba(37, 211, 102, 0.2);
+            color: #25D366;
+        }
+        
+        .stok .link-icon {
+            background: rgba(0, 176, 155, 0.2);
+            color: #00b09b;
+        }
+        
+        .tiktok .link-icon {
+            background: rgba(0, 0, 0, 0.2);
+            color: #000000;
+        }
+        
+        .instagram .link-icon {
+            background: rgba(225, 48, 108, 0.2);
+            color: #e1306c;
+        }
+        
+        .link-text {
+            text-align: left;
+            flex-grow: 1;
+        }
+        
+        .link-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .link-url {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            word-break: break-all;
+        }
+        
+        /* PETA DI BAWAH INSTAGRAM */
+        .map-section {
+            margin: 25px 0;
+            width: 100%;
+            animation: fadeIn 1s ease-out 1s both;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .floating {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+            z-index: -1;
+        }
+        
+        .floating:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            background: rgba(139, 0, 139, 0.1);
+            animation-delay: 0s;
+        }
+        
+        .floating:nth-child(2) {
+            top: 60%;
+            right: 10%;
+            background: rgba(75, 0, 130, 0.1);
+            animation-delay: -5s;
+        }
+        
+        .floating:nth-child(3) {
+            bottom: 20%;
+            left: 15%;
+            background: rgba(255, 215, 0, 0.1);
+            animation-delay: -10s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-40px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+        
+        .counter {
+            margin-top: 20px;
+            color: #8888cc;
+            font-size: 14px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            color: #6666aa;
+            font-size: 12px;
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 100%;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            
+            .link-item {
+                padding: 15px 20px;
+            }
+            
+            .link-title {
+                font-size: 16px;
+            }
+            
+            .link-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+            
+            .logo-circle {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .logo-glow {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .map-container {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating"></div>
+    <div class="floating"></div>
+    <div class="floating"></div>
+    
+    <div class="container">
+        <!-- LOGO BULAT DI TENGAH -->
+        <div class="logo-container">
+            <div class="logo-glow"></div>
+            <div class="logo-circle">
+                <img src="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png" 
+                     alt="Mike Palace Logo"
+                     class="logo-img"
+                     title="Mike - IN PART OF PALACE">
+            </div>
+        </div>
+        
+        <h1>If you want a car, I'll Mike It Deal!</h1>
+        <p class="description">Temukan unit terbaik untuk kebutuhan Anda.<br>Hubungi kami melalui link di bawah:</p>
+        
+        <div class="link-container">
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send/?phone=6285123341858&text=Halo+Mike%2C+saya+tertarik+dengan+mobil+%5B+Isi+%5D.+Apakah+unit+masih+ada+dan+bisa+cek+kondisinya%3F&type=phone_number&app_absent=0" target="_blank" class="link-item link-whatsapp whatsapp">
+                <div class="link-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">WhatsApp</div>
+                    <div class="link-url">Klik untuk chat langsung</div>
+                </div>
+            </a>
+            
+            <!-- Stok Unit -->
+            <a href="https://borongboil.id/mike" target="_blank" class="link-item link-stok stok">
+                <div class="link-icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">Stok Unit</div>
+                    <div class="link-url">borongboil.id/mike</div>
+                </div>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@garage88jkt" target="_blank" class="link-item link-tiktok tiktok">
+                <div class="link-icon">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">TikTok</div>
+                    <div class="link-url">@garage88jkt</div>
+                </div>
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/mikeitdeal?igsh=MTcycndmZ2c3emRnMQ==" target="_blank" class="link-item link-instagram instagram">
+                <div class="link-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="link-text">
+                    <div class="link-title">Instagram</div>
+                    <div class="link-url">@mikeitdeal</div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- PETA DI BAWAH INSTAGRAM -->
+        <div class="map-section">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/d/u/9/embed?mid=1rMOZdXVpj7T1_xcl8tVdjQDy3kVWqoE&ehbc=2E312F&noprof=1" 
+                    width="100%" 
+                    height="100%">
+                </iframe>
+            </div>
+        </div>
+        
+        <div class="counter">
+            📊 Halaman ini telah dilihat <span id="viewCount">1</span> kali
+        </div>
+        
+        <footer>
+            © <span id="currentYear"></span> mikeitdeal • Update: <span id="currentDate"></span><br>
+            <span style="font-size: 10px; opacity: 0.7;">Premium Quality • Trusted Source</span>
+        </footer>
+    </div>
+
+    <script>
+        // Counter views sederhana
+        let views = localStorage.getItem('pageViews') || 1;
+        document.getElementById('viewCount').textContent = views;
+        localStorage.setItem('pageViews', parseInt(views) + 1);
+        
+        // Update tanggal dan tahun
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('currentDate').textContent = now.toLocaleDateString('id-ID', options);
+        document.getElementById('currentYear').textContent = now.getFullYear();
+        
+        // Animasi klik pada link
+        const linkItems = document.querySelectorAll('.link-item');
+        linkItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+        
+        // Animasi masuk untuk elemen
+        document.addEventListener('DOMContentLoaded', function() {
+            const linkItems = document.querySelectorAll('.link-item');
+            linkItems.forEach(item => {
+                item.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html
