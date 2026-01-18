@@ -509,14 +509,22 @@
         
         /* Location Map Section */
         .location-map {
-            width: 100%;
-            height: 200px;
-            border-radius: 15px;
-            overflow: hidden;
-            border: 3px solid rgba(255, 255, 255, 0.15);
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
+    width: 100%;
+    height: 280px; /* dari 200px jadi 280px */
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 30px; /* dari 25px */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 480px) {
+    .location-map {
+        height: 200px; /* tetap 200px di mobile */
+        margin-bottom: 25px;
+    }
+}
         
         /* Branch Accordion */
         .branch-accordion-container {
@@ -802,6 +810,174 @@
                 padding: 12px;
             }
         }
+
+        /* ========== DESKTOP ENHANCEMENT (768px ke atas) ========== */
+@media (min-width: 768px) {
+    /* Container lebih besar */
+    .bit-container {
+        max-width: 500px; /* dari 450px */
+        padding: 25px; /* dari 20px */
+    }
+    
+    /* Hero Section lebih besar */
+    .hero-card {
+        padding: 35px; /* dari 30px */
+        margin-bottom: 30px; /* dari 25px */
+    }
+    
+    .logo-container {
+        width: 160px; /* dari 140px */
+        height: 160px; /* dari 140px */
+    }
+    
+    .animated-title {
+        font-size: 32px; /* dari 28px */
+        margin-bottom: 15px; /* dari 10px */
+    }
+    
+    .tagline {
+        font-size: 16px; /* dari 14px */
+        margin-bottom: 30px; /* dari 25px */
+    }
+    
+    /* Stats lebih besar */
+    .stat-value {
+        font-size: 28px; /* dari 24px */
+    }
+    
+    .stat-label {
+        font-size: 12px; /* dari 11px */
+    }
+    
+    .stats-grid {
+        gap: 15px; /* dari 12px */
+        margin-bottom: 30px; /* dari 25px */
+    }
+    
+    /* Tabs lebih besar */
+    .tab-btn {
+        padding: 20px; /* dari 18px */
+        font-size: 15px; /* dari 14px */
+    }
+    
+    .tab-content {
+        padding: 35px; /* dari 30px */
+    }
+    
+    /* Action Cards lebih besar */
+    .action-card {
+        padding: 25px; /* dari 20px */
+        margin-bottom: 18px; /* dari gap 15px */
+    }
+    
+    .action-icon {
+        width: 55px; /* dari 50px */
+        height: 55px; /* dari 50px */
+        font-size: 24px; /* dari 22px */
+    }
+    
+    .action-title {
+        font-size: 17px; /* dari 16px */
+    }
+    
+    .action-desc {
+        font-size: 14px; /* dari 13px */
+    }
+    
+    /* Social Grid lebih besar */
+    .social-icon {
+        width: 45px; /* dari 40px */
+        height: 45px; /* dari 40px */
+        font-size: 22px; /* dari 20px */
+    }
+    
+    .social-name {
+        font-size: 12px; /* dari 11px */
+    }
+    
+    /* Service Cards lebih besar */
+    .service-card {
+        padding: 25px; /* dari 20px */
+        margin-bottom: 20px; /* dari 15px */
+    }
+    
+    .service-icon {
+        width: 55px; /* dari 48px */
+        height: 55px; /* dari 48px */
+        font-size: 24px; /* dari 22px */
+    }
+    
+    .service-title {
+        font-size: 18px; /* dari 17px */
+    }
+    
+    .service-desc {
+        font-size: 15px; /* dari 14px */
+    }
+    
+    /* Map lebih besar */
+    .location-map {
+        height: 300px; /* dari 200px */
+        margin-bottom: 35px; /* dari 25px */
+    }
+    
+    /* Branch Accordion lebih besar */
+    .branch-accordion-header {
+        padding: 25px; /* dari 20px */
+    }
+    
+    .branch-icon {
+        width: 50px; /* dari 45px */
+        height: 50px; /* dari 45px */
+        font-size: 24px; /* dari 22px */
+    }
+    
+    .branch-title {
+        font-size: 20px; /* dari 18px */
+    }
+    
+    .branch-subtitle {
+        font-size: 14px; /* dari 13px */
+    }
+    
+    .branch-item {
+        padding: 18px; /* dari 15px */
+    }
+    
+    .branch-name {
+        font-size: 16px; /* dari 15px */
+    }
+    
+    .branch-address {
+        font-size: 13px; /* dari 12px */
+    }
+    
+    .branch-hours {
+        font-size: 12px; /* dari 11px */
+    }
+    
+    .branch-maps {
+        padding: 8px 18px; /* dari 6px 14px */
+        font-size: 13px; /* dari 12px */
+    }
+    
+    /* Footer lebih besar */
+    .footer {
+        padding: 30px 25px; /* dari 25px 20px */
+        font-size: 13px; /* dari 12px */
+        margin-top: 25px; /* dari 20px */
+    }
+    
+    .footer-logo {
+        font-size: 28px; /* dari 24px */
+        margin-bottom: 12px; /* dari 10px */
+    }
+    
+    .copyright {
+        font-size: 12px; /* dari 11px */
+        margin-top: 12px; /* dari 10px */
+    }
+}
     </style>
 </head>
 <body>
