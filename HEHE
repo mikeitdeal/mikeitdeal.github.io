@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="id">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["SalesPerson", "CarDealer"],
+  "name": "Mikeitdeal",
+  "image": "https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png",
+  "description": "Mikeitdeal - Solusi mobil bekas terpercaya. Jual beli mobil bekas berkualitas dengan harga terbaik.",
+  "url": "https://mikeitdeal.my.id",
+  "telephone": "+6285123341858",
+  "priceRange": "Rp 100jt - Rp 800jt",
+  "openingHours": "Mo-Su 09:00-17:00",
+  "paymentAccepted": "Cash, Credit Card, Trade In",
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Car",
+      "name": "Mobil Bekas",
+      "description": "Toyota, Honda, Suzuki, Daihatsu, Mitsubishi, Mazda, Hyundai, BMW, Mercedes bekas berkualitas"
+    }
+  },
+  "sameAs": [
+    "https://instagram.com/mikeitdeal",
+    "https://tiktok.com/@mikeitdeal"
+  ]
+}
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mikeitdeal - Solusi Mobil Bekas Berkualitas Dengan Harga Terbaik di Jakarta dan Tangerang. Memiliki lebih dari 150 Unit pilihan.">
+<meta name="keywords" content="mikeitdeal, mobilbekas, mobil, mikeitdeal tiktok, mikeitdeal instagram">
+    <title>Mikeitdeal</title>
+
+      <!-- Untuk browser modern -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png">
+
+<!-- Untuk Apple devices -->
+<link rel="apple-touch-icon" href="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png">
+
+<!-- Untuk Android -->
+<link rel="shortcut icon" href="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <!-- React Bit CSS -->
+    <link href="https://bit.cloud/eden/eden-ui/~latest/eden.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* React Bit Enhanced Container */
+        .bit-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        /* Animated Background Elements */
+        .bg-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 0, 139, 0.15) 0%, transparent 70%);
+            filter: blur(60px);
+            z-index: -2;
+        }
+        
+        .bg-glow-1 {
+            top: -200px;
+            left: -200px;
+            animation: floatGlow 20s infinite ease-in-out;
+        }
+        
+        .bg-glow-2 {
+            bottom: -200px;
+            right: -200px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            animation: floatGlow 25s infinite ease-in-out reverse;
+        }
+        
+        /* Hero Section */
+        .hero-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 0.6s ease-out;
+        }
+        
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DA70D6, #9370DB, #8A2BE2);
+        }
+        
+        /* Logo Animation */
+        .logo-container {
+            position: relative;
+            margin: 0 auto 25px;
+            width: 140px;
+            height: 140px;
+        }
+        
+        .logo-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            animation: rotate 20s linear infinite;
+        }
+        
+        .logo-ring-1 {
+            border-top-color: rgba(218, 112, 214, 0.6);
+            animation-delay: 0s;
+        }
+        
+        .logo-ring-2 {
+            border-right-color: rgba(147, 112, 219, 0.4);
+            animation-delay: -5s;
+        }
+        
+        .logo-ring-3 {
+            border-bottom-color: rgba(138, 43, 226, 0.3);
+            animation-delay: -10s;
+        }
+        
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .logo-image:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Title Animation */
+        .animated-title {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #DA70D6, #9370DB, #8A2BE2, #DA70D6);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradientShift 8s infinite ease-in-out; /* GANTI INI */
+        }
+        
+        .tagline {
+            color: #b0b0ff;
+            font-size: 14px;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+        
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Interactive Tabs */
+        .tabs-container {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tabs-header {
+            display: flex;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .tab-btn {
+            flex: 1;
+            padding: 18px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .tab-btn:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .tab-btn.active {
+            color: #FFD700;
+            background: rgba(255, 215, 0, 0.05);
+        }
+        
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            right: 20%;
+            height: 3px;
+            background: linear-gradient(90deg, #FFD700, #FFA500);
+            border-radius: 3px;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 30px;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Action Cards */
+        .action-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .action-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 18px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .action-card:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .action-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, #DA70D6, #9370DB);
+            border-radius: 4px 0 0 4px;
+        }
+        
+        .action-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-right: 15px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .action-card:hover .action-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .action-content {
+            flex: 1;
+        }
+        
+        .action-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .action-desc {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+        }
+        
+        .action-arrow {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .action-card:hover .action-arrow {
+            color: #FFD700;
+            transform: translateX(5px);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+      
+      .badge-secondary {
+    background: linear-gradient(45deg, #6c757d, #495057); /* Abu-abu */
+    color: white;
+}
+        
+        .badge-hot {
+            background: linear-gradient(45deg, #FF416C, #FF4B2B);
+            color: white;
+        }
+        
+        .badge-new {
+            background: linear-gradient(45deg, #25D366, #00b09b);
+            color: white;
+        }
+        
+        /* Social Grid */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .social-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .social-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        .social-name {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Service Cards */
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .service-title {
+            font-weight: 600;
+            font-size: 17px;
+            color: #FFD700;
+        }
+        
+        .service-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .service-features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-feature {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+        }
+        
+        .service-feature:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            color: #00FF9D;
+            font-size: 14px;
+        }
+        
+        /* ========== CABANG SECTION POPUP/EXPANDABLE ========== */
+        
+        /* Location Map Section */
+        .location-map {
+    width: 100%;
+    height: 280px; /* dari 200px jadi 280px */
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 30px; /* dari 25px */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 480px) {
+    .location-map {
+        height: 240px; /* tetap 200px di mobile */
+        margin-bottom: 25px;
+    }
+}
+        
+        /* Branch Accordion */
+        .branch-accordion-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .branch-accordion {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .branch-accordion-header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .branch-accordion-header:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .branch-accordion.active .branch-accordion-header {
+            background: rgba(255, 255, 255, 0.07);
+        }
+        
+        .branch-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .branch-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+        
+        .branch-icon-aha {
+            background: rgba(147, 112, 219, 0.2);
+            color: #9370DB;
+            border: 2px solid rgba(147, 112, 219, 0.3);
+        }
+        
+        .branch-icon-garage88 {
+            background: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+            border: 2px solid rgba(52, 152, 219, 0.3);
+        }
+        
+        .branch-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #FFD700;
+        }
+        
+        .branch-subtitle {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 3px;
+        }
+        
+        .branch-arrow {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        
+        .branch-accordion.active .branch-arrow {
+            transform: rotate(180deg);
+            color: #FFD700;
+        }
+        
+        .branch-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        
+        .branch-accordion.active .branch-accordion-content {
+            max-height: 2000px;
+        }
+        
+        .branch-list {
+            padding: 0 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .branch-item {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .branch-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(5px);
+        }
+        
+        .branch-name {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #FFD700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .branch-address {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+        
+        .branch-hours {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .branch-maps {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(37, 211, 102, 0.1);
+            color: #25D366;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(37, 211, 102, 0.2);
+        }
+        
+        .branch-maps:hover {
+            background: rgba(37, 211, 102, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 15px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 15px;
+        }
+        
+        
+        .copyright {
+            margin-top: 10px;
+            font-size: 11px;
+            opacity: 0.6;
+        }
+        
+        /* Glow Effect Aman untuk Hover */
+        .action-card, .social-card {
+            position: relative;
+        }
+        
+        .action-card:hover::after, .social-card:hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            border-radius: inherit;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes floatGlow {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 480px) {
+            .bit-container {
+                padding: 15px;
+            }
+            
+            .hero-card {
+                padding: 20px;
+            }
+            
+            .logo-container {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .animated-title {
+                font-size: 24px;
+            }
+            
+            .tabs-header {
+                flex-wrap: wrap;
+            }
+            
+            .tab-btn {
+                padding: 15px 10px;
+                font-size: 13px;
+            }
+            
+            .tab-content {
+                padding: 20px;
+            }
+            
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .location-map {
+                height: 180px;
+            }
+            
+            .branch-accordion-header {
+                padding: 15px;
+            }
+            
+            .branch-list {
+                padding: 0 15px 15px;
+            }
+            
+            .branch-item {
+                padding: 12px;
+            }
+        }
+
+        /* ========== DESKTOP ENHANCEMENT (768px ke atas) ========== */
+@media (min-width: 768px) {
+    /* Container lebih besar */
+    .bit-container {
+        max-width: 500px; /* dari 450px */
+        padding: 25px; /* dari 20px */
+    }
+    
+    /* Hero Section lebih besar */
+    .hero-card {
+        padding: 35px; /* dari 30px */
+        margin-bottom: 30px; /* dari 25px */
+    }
+    
+    .logo-container {
+        width: 160px; /* dari 140px */
+        height: 160px; /* dari 140px */
+    }
+    
+    .animated-title {
+        font-size: 32px; /* dari 28px */
+        margin-bottom: 15px; /* dari 10px */
+    }
+    
+    .tagline {
+        font-size: 16px; /* dari 14px */
+        margin-bottom: 30px; /* dari 25px */
+    }
+    
+    /* Stats lebih besar */
+    .stat-value {
+        font-size: 28px; /* dari 24px */
+    }
+    
+    .stat-label {
+        font-size: 12px; /* dari 11px */
+    }
+    
+    .stats-grid {
+        gap: 15px; /* dari 12px */
+        margin-bottom: 30px; /* dari 25px */
+    }
+    
+    /* Tabs lebih besar */
+    .tab-btn {
+        padding: 20px; /* dari 18px */
+        font-size: 15px; /* dari 14px */
+    }
+    
+    .tab-content {
+        padding: 35px; /* dari 30px */
+    }
+    
+    /* Action Cards lebih besar */
+    .action-card {
+        padding: 25px; /* dari 20px */
+        margin-bottom: 18px; /* dari gap 15px */
+    }
+    
+    .action-icon {
+        width: 55px; /* dari 50px */
+        height: 55px; /* dari 50px */
+        font-size: 24px; /* dari 22px */
+    }
+    
+    .action-title {
+        font-size: 17px; /* dari 16px */
+    }
+    
+    .action-desc {
+        font-size: 14px; /* dari 13px */
+    }
+    
+    /* Social Grid lebih besar */
+    .social-icon {
+        width: 45px; /* dari 40px */
+        height: 45px; /* dari 40px */
+        font-size: 22px; /* dari 20px */
+    }
+    
+    .social-name {
+        font-size: 12px; /* dari 11px */
+    }
+    
+    /* Service Cards lebih besar */
+    .service-card {
+        padding: 25px; /* dari 20px */
+        margin-bottom: 20px; /* dari 15px */
+    }
+    
+    .service-icon {
+        width: 55px; /* dari 48px */
+        height: 55px; /* dari 48px */
+        font-size: 24px; /* dari 22px */
+    }
+    
+    .service-title {
+        font-size: 18px; /* dari 17px */
+    }
+    
+    .service-desc {
+        font-size: 15px; /* dari 14px */
+    }
+    
+    /* Map lebih besar */
+    .location-map {
+        height: 300px; /* dari 200px */
+        margin-bottom: 35px; /* dari 25px */
+    }
+    
+    /* Branch Accordion lebih besar */
+    .branch-accordion-header {
+        padding: 25px; /* dari 20px */
+    }
+    
+    .branch-icon {
+        width: 50px; /* dari 45px */
+        height: 50px; /* dari 45px */
+        font-size: 24px; /* dari 22px */
+    }
+    
+    .branch-title {
+        font-size: 20px; /* dari 18px */
+    }
+    
+    .branch-subtitle {
+        font-size: 14px; /* dari 13px */
+    }
+    
+    .branch-item {
+        padding: 18px; /* dari 15px */
+    }
+    
+    .branch-name {
+        font-size: 16px; /* dari 15px */
+    }
+    
+    .branch-address {
+        font-size: 13px; /* dari 12px */
+    }
+    
+    .branch-hours {
+        font-size: 12px; /* dari 11px */
+    }
+    
+    .branch-maps {
+        padding: 8px 18px; /* dari 6px 14px */
+        font-size: 13px; /* dari 12px */
+    }
+    
+    /* Footer lebih besar */
+    .footer {
+        padding: 30px 25px; /* dari 25px 20px */
+        font-size: 13px; /* dari 12px */
+        margin-top: 25px; /* dari 20px */
+    }
+    
+    .footer-logo {
+        font-size: 28px; /* dari 24px */
+        margin-bottom: 12px; /* dari 10px */
+    }
+    
+    .copyright {
+        font-size: 12px; /* dari 11px */
+        margin-top: 12px; /* dari 10px */
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    
+    <div class="bit-container">
+        <!-- Hero Section -->
+        <div class="hero-card">
+            <!-- Animated Logo -->
+            <div class="logo-container">
+                <div class="logo-ring logo-ring-1"></div>
+                <div class="logo-ring logo-ring-2"></div>
+                <div class="logo-ring logo-ring-3"></div>
+                <img src="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png" 
+                     alt="Mikeitdeal Logo"
+                     class="logo-image">
+            </div>
+            
+            <!-- Animated Title -->
+            <h1 class="animated-title">Mikeitdeal</h1>
+            <p class="tagline">If you want a car, I'll Mike It Deal!</p>
+            
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="client">250+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stock">110+</div>
+                    <div class="stat-label">Ready Stock</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="experience">4+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Interactive Tabs -->
+        <div class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="switchTab('contact')">
+                    <i class="fas fa-phone-alt"></i> Kontak
+                </button>
+                <button class="tab-btn" onclick="switchTab('services')">
+                   <i class="fas fa-list-check"></i> Layanan
+                </button>
+                <button class="tab-btn" onclick="switchTab('locations')">
+                    <i class="fas fa-store"></i> Cabang
+                </button>
+            </div>
+            
+            <!-- Contact Tab -->
+            <div id="contactTab" class="tab-content active">
+                <div class="action-grid">
+                    <!-- WhatsApp Mike -->
+                    <a href="https://api.whatsapp.com/send/?phone=6285123341858&text=Halo+Mike%2C+saya+tertarik+dengan+mobil+%5B+Isi+%5D.+Apakah+unit+masih+ada+dan+bisa+cek+kondisinya%3F&type=phone_number&app_absent=0" 
+                       target="_blank" class="action-card">
+                        <div class="action-icon" style="background: rgba(37, 211, 102, 0.2); color: #25D366;">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="action-content">
+                            <div class="action-title">
+                                WhatsApp Mike 
+                            </div>
+                            <div class="action-desc">Chat langsung dengan Mike untuk konsultasi mobil</div>
+                        </div>
+                        <i class="fas fa-chevron-right action-arrow"></i>
+                    </a>
+                    
+                    <!-- WhatsApp Sena -->
+                    <a href="https://api.whatsapp.com/send/?phone=6285167064590&text=Halo+Sena%2C+saya+tertarik+dengan+mobil+%5B+Isi+%5D.+Apakah+unit+masih+ada+dan+bisa+cek+kondisinya%3F&type=phone_number&app_absent=0" 
+                       target="_blank" class="action-card">
+                        <div class="action-icon" style="background: rgba(37, 211, 102, 0.2); color: #25D366;">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="action-content">
+                            <div class="action-title">WhatsApp Sena</div> 
+                            <div class="action-desc">Informasi stok dan backup</div>
+                        </div>
+                        <i class="fas fa-chevron-right action-arrow"></i>
+                    </a>
+                    
+                    <!-- BorongBoil -->
+                    <a href="https://borongboil.id/mike" 
+                       target="_blank" class="action-card">
+                        <div class="action-icon" style="background: rgba(0, 176, 155, 0.2); color: #00b09b;">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="action-content">
+                            <div class="action-title">
+                                BorongBoil <span class="badge badge-new">New</span>
+                            </div>
+                            <div class="action-desc">Lihat katalog mobil ready stock terbaru</div>
+                        </div>
+                        <i class="fas fa-chevron-right action-arrow"></i>
+                    </a>
+                    
+                    <!-- Social Media -->
+                    <div style="margin-top: 20px;">
+                        <p style="color: rgba(255, 255, 255, 0.6); font-size: 14px; margin-bottom: 15px; text-align: center;">
+                            <i class="fas fa-share-alt"></i> Ikuti kami di:
+                        </p>
+                        <div class="social-grid">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/mikeitdeal?igsh=MTcycndmZ2c3emRnMQ==" 
+                               target="_blank" class="social-card">
+                                <div class="social-icon" style="background: rgba(225, 48, 108, 0.2); color: #e1306c;">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="social-name">Instagram</div>
+                            </a>
+                            
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@mikeitdeal" 
+                               target="_blank" class="social-card">
+                                <div class="social-icon" style="background: rgba(0, 0, 0, 0.2); color: #000000;">
+                                    <i class="fab fa-tiktok"></i>
+                                </div>
+                                <div class="social-name">TikTok</div>
+                            </a>
+                            
+                            <!-- OLX dengan logo asli -->
+<a href="https://www.olx.co.id/profile/130019536" 
+   target="_blank" class="social-card">
+    <div class="social-icon" style="
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    ">
+        <img src="https://static.vecteezy.com/system/resources/previews/054/650/826/non_2x/olx-logo-rounded-olx-logo-free-png.png" 
+             alt="OLX Logo"
+             style="width: 28px; height: 28px; object-fit: contain;">
+    </div>
+    <div class="social-name">OLX</div>
+</a>
+                            
+                         <!-- Mobil123 dengan logo asli -->
+<a href="https://www.mobil123.com/dealer/4308662b-687c-46f7-b3d2-56925882b6cb" 
+   target="_blank" class="social-card">
+    <div class="social-icon" style="
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    ">
+        <img src="https://imgs.search.brave.com/a5W4dMsNFdYrNGGmGwuKvGASK4Dj2UDqWrt72ohG3lA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tb2Jp/bDEyMy5pY2FyY2Ru/LmNvbS9pbWFnZXMv/aWNvbi9hcHAuc3Zn" 
+             alt="Mobil123 Logo"
+             style="width: 28px; height: 28px; object-fit: contain;">
+    </div>
+    <div class="social-name">Mobil123</div>
+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services Tab -->
+            <div id="servicesTab" class="tab-content">
+                <!-- Survey Service -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon" style="color: #DA70D6;">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div>
+                            <div class="service-title">Layanan Survei Mobil</div>
+                            <div style="font-size: 12px; color: rgba(255, 255, 255, 0.6);">Tersedia showing ke lokasi Anda</div>
+                        </div>
+                    </div>
+                    <p class="service-desc">
+                        Kami menyediakan layanan survei mobil dengan dua pilihan: showing mobil ke lokasi Anda atau antar ke cabang terdekat. (Syarat & Ketentuan berlaku)
+                    </p>
+                    <button onclick="scheduleSurvey()" style="
+                        width: 100%;
+                        padding: 14px;
+                        background: linear-gradient(45deg, #DA70D6, #9370DB);
+                        border: none;
+                        border-radius: 14px;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 15px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        transition: all 0.3s ease;
+                    ">
+                        <i class="fas fa-calendar-check"></i> Jadwalkan Survei Sekarang
+                    </button>
+                </div>
+                
+                <!-- Insurance Service -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon" style="color: #25D366;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <div class="service-title">Free Asuransi 1 Tahun</div>
+                            <div style="font-size: 12px; color: rgba(255, 255, 255, 0.6);">Setiap pembelian unit</div>
+                        </div>
+                    </div>
+                    <p class="service-desc">
+                        Gratis asuransi mesin dan transmisi selama 1 tahun untuk setiap pembelian mobil di Garage88 & GarasiAHA.
+                    </p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>Coverage asuransi mesin & transmisi</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>Masa berlaku 1 tahun</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>Klaim mudah & proses cepat</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Road Assistance -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon" style="color: #3498db;">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div>
+                            <div class="service-title">Emergency Road Assistance</div>
+                            <div style="font-size: 12px; color: rgba(255, 255, 255, 0.6);">Free selama 1 tahun</div>
+                        </div>
+                    </div>
+                    <p class="service-desc">
+                        Layanan darurat di jalan untuk membantu Anda dalam keadaan darurat kendaraan.
+                    </p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-trailer feature-icon"></i>
+                            <span>Towing darurat seluruh Indonesia</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-gas-pump feature-icon"></i>
+                            <span>Pengisian bahan bakar (free 5 liter)</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-tools feature-icon"></i>
+                            <span>Pemeriksaan mobil di tempat</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-car-side feature-icon"></i>
+                            <span>Pembukaan pintu mobil terkunci</span>
+                        </li>
+                         <li class="service-feature">
+                            <i class="fas fa-wrench feature-icon"></i>
+                            <span>Penggantian Ban Serep</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Locations Tab - POPUP/ACCORDION VERSION -->
+            <div id="locationsTab" class="tab-content">
+                <!-- Google Maps -->
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1rMOZdXVpj7T1_xcl8tVdjQDy3kVWqoE&ehbc=2E312F&noprof=1&ll=-6.25372558518424%2C106.77189754999999&z=12" 
+                        width="100%" 
+                        height="100%" 
+                        style="border: none;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- Branch Accordion Container -->
+                <div class="branch-accordion-container">
+                    <!-- Garage88 Accordion -->
+                    <div class="branch-accordion" id="garage88Accordion">
+                        <div class="branch-accordion-header" onclick="toggleBranch('garage88')">
+                            <div class="branch-header-left">
+                                <div class="branch-icon branch-icon-garage88">
+                                    <i class="fas fa-warehouse"></i>
+                                </div>
+                                <div>
+                                    <div class="branch-title">Garage88</div>
+                                    <div class="branch-subtitle">4 cabang - Klik untuk lihat</div>
+                                </div>
+                            </div>
+                            <div class="branch-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="branch-accordion-content">
+                            <div class="branch-list">
+                                <!-- Garage88 Ciater, BSD -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Garage88 Ciater, BSD
+                                    </div>
+                                    <div class="branch-address">Jl. Raya Bukit Sarua No.12, Serua, Ciputat</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Minggu, 08:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/Garage+88+Ciater,+Jl.+Raya+Bukit+Sarua+No.12,+Serua,+Kec.+Ciputat,+Kota+Tangerang+Selatan,+Banten+15414/@-6.1899821,106.6761283,15z/data=!4m2!3m1!1s0x2e69e5002a649b45:0x461d58db91e0535d?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                                
+                                <!-- Garage88 Joglo, Joglo -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Garage88 Joglo, Jakbar
+                                    </div>
+                                    <div class="branch-address">Jl. Kejaksaan IV Timur No.34, Kreo, Larangan</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Minggu, 09:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/Garage88Joglo,+Jl.+Kejaksaan+IV+Timur+No.34,+RT.004%2FRW.005,+Kreo,+Kec.+Larangan,+Kota+Tangerang,+Banten+15154/@-6.1829669,106.682727,13z/data=!4m2!3m1!1s0x2e69f10f5d3137c9:0x21a398942b5c96b2?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                                
+                                <!-- Garage88 Kebayoran, Jakarta Selatan -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Garage88 Kebayoran, Jaksel
+                                    </div>
+                                    <div class="branch-address">Jl. Radio I No.19 3, Kramat Pela, Kebayoran Baru</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Minggu, 09:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/Garage+88,+Jl.+Radio+I+No.19+3,+RT.3%2FRW.4,+Kramat+Pela,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12130/@-6.182967,106.682727,13z/data=!4m2!3m1!1s0x2e69f112e93e4ac3:0xbb026466b159d9d4?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                                
+                                <!-- Garage88 Basura, Cipinang -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Garage88 Basura, Jaktim
+                                    </div>
+                                    <div class="branch-address">Jl. Cipinang Muara I No.49, Pd. Bambu, Duren Sawit</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Minggu, 09:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/Garage88+Basura,+Jl.+Cipinang+Muara+I+No.49,+RT.2%2FRW.3,+Pd.+Bambu,+Kec.+Duren+Sawit,+Kota+Jakarta+Timur,+Daerah+Khusus+Ibukota+Jakarta+13420/@-6.247296,106.792483,15z/data=!4m2!3m1!1s0x2e69f30028c37c97:0x3c38d7bf19d89608?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AHA Accordion -->
+                    <div class="branch-accordion" id="ahaAccordion">
+                        <div class="branch-accordion-header" onclick="toggleBranch('aha')">
+                            <div class="branch-header-left">
+                                <div class="branch-icon branch-icon-aha">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div>
+                                    <div class="branch-title">Garasi AHA</div>
+                                    <div class="branch-subtitle">4 cabang - Klik untuk lihat</div>
+                                </div>
+                            </div>
+                            <div class="branch-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="branch-accordion-content">
+                            <div class="branch-list">
+                                <!-- Aha Gallery, Cipondoh -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Aha Gallery, Cipondoh
+                                    </div>
+                                    <div class="branch-address">Jl. Wijaya Kusuma 2, Cipete, Pinang, Tangerang</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Minggu, 09:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/AHA+GALLERY,+Jl.+Wijaya+Kusuma+2+Jl.+Banjar+Wijaya+No.32+Blok+B45+no+31,+Cipete,+Kec.+Pinang,+Kota+Tangerang,+Banten+15142/@-6.2062592,106.807296,9z/data=!4m2!3m1!1s0x2e69f90077c66997:0x7cf735b5feea6164?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                                
+                                <!-- Aha Gajah Mada, Cipete -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Aha Gajah Mada, Cipete
+                                    </div>
+                                    <div class="branch-address">Jl. Gajah Mada No.30, Cipete, Pinang, Tangerang</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Sabtu, 08:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/Garasi+AhA+Auto+Car,+Jl.+Gajah+Mada+No.30,+RT.002%2FRW.001,+Cipete,+Pinang,+Tangerang+City,+Banten+15142/@-6.2022226,106.6522436,15z/data=!4m6!3m5!1s0x2e69f9704a0514cd:0xb8c0d924e20712ec!8m2!3d-6.2022226!4d106.6522436!16s%2Fg%2F11gtf3pgv6?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                                
+                                <!-- Aha Adex, Serpong -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Aha Adex, Serpong
+                                    </div>
+                                    <div class="branch-address">Jl. Raya Serpong KM 7, Pakulonan, Serpong</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Sabtu, 09:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/Adira+Expo,+Jl.+Raya+Serpong+Kilometer+7,+Pakulongan,+Serpong+Sub-District,+South+Tangerang+City,+Banten+15310/@-6.1829669,106.682727,13z/data=!4m2!3m1!1s0x2e69fb97b1586225:0xd717555196a098e?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                                
+                                <!-- Aha Gajah Mada, Cipondoh -->
+                                <div class="branch-item">
+                                    <div class="branch-name">
+                                        <i class="fas fa-map-pin"></i> Aha Gajah Mada, Cipondoh
+                                    </div>
+                                    <div class="branch-address">Jl. Maulana Hasanudin, Cipondoh, Tangerang</div>
+                                    <div class="branch-hours">
+                                        <i class="fas fa-clock"></i> Senin-Minggu, 09:00-17:00
+                                    </div>
+                                    <a href="https://www.google.com/maps/place/AHA+Gajah+Mada+Cipondoh,+Jl.+Maulana+Hasanudin,+Cipondoh,+Tangerang+City,+Banten+15148/@-6.2513562,106.6508106,15z/data=!4m2!3m1!1s0x2e69f90001251e29:0xb21c6b4ff79bf170?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI1MTIwOF8wIJvbDyoASAJQAQ%3D%3D" 
+                                       target="_blank" class="branch-maps">
+                                        <i class="fas fa-map-marker-alt"></i> Lihat di Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jam Buka -->
+                <div style="text-align: center; margin-top: 20px; color: rgba(255, 255, 255, 0.6); font-size: 14px; padding: 15px; background: rgba(255, 255, 255, 0.03); border-radius: 12px;">
+                    <i class="fas fa-clock" style="color: #FFD700; margin-right: 8px;"></i>
+                      Buka Setiap Hari dan Tutup Pukul 17.00 <br> Bisa Janjian Dahulu Untuk Diluar Jam Operasional! </p>
+                </div>
+            </div>
+        </div>
+        
+       
+       <!-- Footer -->
+<div class="footer">
+    <div style="font-weight: 600; color: rgba(255, 255, 255, 0.8); margin-bottom: 5px; padding-top: 5px;">
+        Mike - Garage88Barito
+    </div>
+     <div style="color: rgba(255, 255, 255, 0.6); font-size: 13px; margin-bottom: 10px;">
+            <div class="copyright">
+                © <span id="currentYear"></span> • Premium Quality • Trusted Source
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Animate stats
+            animateCounter('clients', 0, 250, '+');
+            animateCounter('stock', 0, 110, '+');
+            animateCounter('experience', 0, 4, '+');
+            
+            // Add hover effects
+            const cards = document.querySelectorAll('.action-card, .social-card, .service-card, .branch-item');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.3)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '';
+                });
+            });
+            
+            // Add click animations
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+            
+          // Initialize - semua accordion tertutup
+document.querySelectorAll('.branch-accordion').forEach(acc => {
+    acc.classList.remove('active');
+});
+        });
+        
+        // Tab switching
+        function switchTab(tabName) {
+            // Update tabs
+            document.querySelectorAll('.tab-btn').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Activate selected tab
+            event.target.classList.add('active');
+            document.getElementById(tabName + 'Tab').classList.add('active');
+        }
+        
+        // Schedule survey function
+            function scheduleSurvey() {
+    const url = 'https://api.whatsapp.com/send/?phone=6285167064590&text=Halo%20Sena%2C%20saya%20ingin%20jadwalkan%20survei%20mobil%20untuk%20melihat%20unit[ isi ].%20Bagaimana%20Ketentuanya%20Ya%3F&type=phone_number&app_absent=0';
+    window.open(url, '_blank');
+}
+        
+        // Animate counter
+        function animateCounter(elementId, start, end, suffix = '') {
+            const element = document.getElementById(elementId);
+            let current = start;
+            const increment = Math.ceil((end - start) / 60);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= end) {
+                    current = end;
+                    clearInterval(timer);
+                }
+                element.textContent = current + suffix;
+            }, 30);
+        }
+        
+        // Toggle branch accordion
+        function toggleBranch(branchType) {
+            const accordion = document.getElementById(branchType + 'Accordion');
+            const isActive = accordion.classList.contains('active');
+            
+            // Close all accordions first
+            document.querySelectorAll('.branch-accordion').forEach(acc => {
+                acc.classList.remove('active');
+            });
+            
+            // Open clicked accordion if it was closed
+            if (!isActive) {
+                accordion.classList.add('active');
+            }
+        }
+    </script>
+    <div style="display:none;">
+  <!-- Primary Keywords -->
+  mobil bekas jakarta | dealer mobil bekas | jual mobil bekas | mobil second jakarta
+  
+  <!-- Secondary Keywords -->
+  toyota bekas jakarta | honda bekas jakarta | suzuki bekas jakarta | daihatsu bekas jakarta | mazda bekas jakarta | hyundai bekas jakarta | mitsubishi bekas jakarta |
+  kredit mobil bekas dp ringan | trade in mobil lama | harga mobil bekas | jual mobil second
+  
+  <!-- Branded Keywords -->
+  mikeitdeal sales | mikeitdeal jakarta | mike it deal automotive | sales mikeitdeal
+    </div>
+<div style="display: none;">
+    <p>Mikeitdeal adalah sales automotive specialist mobil bekas terpercaya di Jakarta. Spesialisasi dalam jual beli mobil bekas berbagai merk seperti Toyota, Daihatsu, Suzuki, Honda, Mitsubishi, Nissan, Mazda, Hyundai, BMW, Mercedes-Benz, Volkswagen.</p>
+    
+    <p>Layanan yang tersedia: konsultasi pemilihan mobil bekas sesuai kebutuhan dan budget, test drive unit, bantuan pengurusan kredit mobil dengan DP ringan, layanan trade-in mobil lama, dan after sales service. Hubungi saya di WhatsApp 0851-2334-1858 untuk informasi lebih lanjut.</p>
+    
+    <p>Kami melayani area Jakarta, Tangerang, dan sekitarnya. Proses transaksi aman, cepat, dan transparan dengan harga pasaran yang kompetitif.</p>
+    
+    <h3>Merk Mobil yang Tersedia:</h3>
+    <ul>
+      <li>Toyota: Avanza, Rush, Innova, Zenix, Fortuner, Yaris, Camry, Nav1, Corolla Cross, Voxy, Corolla Altis</li>
+      <li>Honda: CR-V, HR-V, BR-V, Brio, Mobilio, Civic, Jazz</li>
+      <li>Suzuki: Ertiga, Baleno, Xl7, Jimny, Ignis</li>
+      <li>Daihatsu: Xenia, Terios, Ayla, Sigra</li>
+      <li>Mitsubishi: Pajero, Xpander, Outlander, Delica</li>
+      <li>Nissan: Livina, Serena, X-Trail, Terra</li>
+      <li>Mazda: 2, CX3, CX30, CX5, CX9</li>
+      <li>Hyundai: Creta, Palisade, SantaFe, Ioniq, Kona, Stargazer, StargazerX, H1</li>
+      <li>BMW: 320I</li>
+      <li>Mercedes: GLA200, S350, S500</li>
+      <li>Volkswagen: Scirocco, Tiguan</li>
+    </ul>
+</div>
+  
+</body>
+</html>
+</body>
+</html>
