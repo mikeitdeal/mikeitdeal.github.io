@@ -83,7 +83,6 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px -10px rgba(16, 185, 129, 0.5);
         }
-        /* Fix for details marker on all browsers */
         details > summary {
             list-style: none;
         }
@@ -96,7 +95,6 @@
         .fa-chevron-down {
             transition: transform 0.3s;
         }
-        /* Floating Button Animation Style */
         .floating-wa-btn::before {
             content: '';
             position: absolute;
@@ -121,10 +119,10 @@
 <body class="bg-brand-dark text-slate-200 antialiased">
 
     <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png" alt="Mikeitdeal Logo - Mobil Bekas Premium" class="h-10 w-10 rounded-full border border-brand-accent/30 object-cover">
-                <span class="font-bold text-xl tracking-tight text-white uppercase">Mikeitdeal</span>
+        <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 md:gap-3">
+                <img src="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png" alt="Mikeitdeal Logo" class="h-8 w-8 md:h-10 md:w-10 rounded-full border border-brand-accent/30 object-cover">
+                <span class="font-bold text-lg md:text-xl tracking-tight text-white uppercase">Mikeitdeal</span>
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-slate-400">
                 <a href="#home" class="hover:text-brand-accent transition">Home</a>
@@ -135,32 +133,32 @@
         </div>
     </nav>
 
-    <section id="home" class="relative pt-32 pb-20 px-6 overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-brand-accent/5 rounded-full blur-[120px] -z-10"></div>
+    <section id="home" class="relative pt-28 md:pt-32 pb-16 md:pb-20 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full md:w-[1000px] h-[600px] bg-brand-accent/5 rounded-full blur-[120px] -z-10"></div>
         
         <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 rounded-full glass border-white/10 text-brand-accent text-xs font-bold uppercase tracking-[0.2em]">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full glass border-white/10 text-brand-accent text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">
                 Automotive Sales Specialist
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+            <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
                 If you want a Used Car,<br><span class="text-gradient">I'll Mike It Deal!</span>
             </h1>
-            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-slate-400 text-sm md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
                 Sales di Showroom Yang Telah Menjual Lebih Dari 1000 Unit Mobil Bekas Berkualitas di Jakarta & Tangerang Dengan Garansi 1 Tahun, Harga Kompetitif, dan Layanan Purna Jual Tanpa Tanding.
             </p>
 
-            <div class="grid grid-cols-3 gap-4 mb-12 max-w-lg mx-auto">
-                <div class="glass p-6 rounded-3xl">
-                    <div class="text-3xl font-bold text-white mb-1">100+</div>
-                    <div class="text-xs text-slate-500 uppercase tracking-wider">Happy Clients</div>
+            <div class="grid grid-cols-3 gap-2 md:gap-4 mb-12 max-w-lg mx-auto">
+                <div class="glass p-3 md:p-6 rounded-2xl md:rounded-3xl">
+                    <div class="text-xl md:text-3xl font-bold text-white mb-1">100+</div>
+                    <div class="text-[8px] md:text-xs text-slate-500 uppercase tracking-wider">Happy Clients</div>
                 </div>
-                <div class="glass p-6 rounded-3xl">
-                    <div class="text-3xl font-bold text-white mb-1">120+</div>
-                    <div class="text-xs text-slate-500 uppercase tracking-wider">Ready Stock</div>
+                <div class="glass p-3 md:p-6 rounded-2xl md:rounded-3xl">
+                    <div class="text-xl md:text-3xl font-bold text-white mb-1">120+</div>
+                    <div class="text-[8px] md:text-xs text-slate-500 uppercase tracking-wider">Ready Stock</div>
                 </div>
-                <div class="glass p-6 rounded-3xl">
-                    <div class="text-3xl font-bold text-white mb-1">3+</div>
-                    <div class="text-xs text-slate-500 uppercase tracking-wider">Years Experience</div>
+                <div class="glass p-3 md:p-6 rounded-2xl md:rounded-3xl">
+                    <div class="text-xl md:text-3xl font-bold text-white mb-1">3+</div>
+                    <div class="text-[8px] md:text-xs text-slate-500 uppercase tracking-wider leading-none">Years Exp</div>
                 </div>
             </div>
 
@@ -175,41 +173,41 @@
         </div>
     </section>
 
-    <section id="services" class="py-20 px-6">
+    <section id="services" class="py-16 md:py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12 text-center md:text-left">
-                <h2 class="text-3xl font-bold text-white mb-4 italic underline decoration-brand-accent">Keuntungan Beli di Kami</h2>
-                <p class="text-slate-400">Keamanan transaksi dan kenyamanan unit Anda adalah prioritas utama Mikeitdeal.</p>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 italic underline decoration-brand-accent">Keuntungan Beli di Kami</h2>
+                <p class="text-slate-400 text-sm md:text-base">Keamanan transaksi dan kenyamanan unit Anda adalah prioritas utama Mikeitdeal.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="glass p-8 rounded-[2rem] group hover:bg-white/5 transition-all">
-                    <div class="w-14 h-14 bg-brand-accent/10 rounded-2xl flex items-center justify-center text-brand-accent text-2xl mb-6 group-hover:scale-110 transition">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-6 md:p-8 rounded-[2rem] group hover:bg-white/5 transition-all text-center md:text-left">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-brand-accent/10 rounded-2xl flex items-center justify-center text-brand-accent text-xl md:text-2xl mb-6 mx-auto md:mx-0 group-hover:scale-110 transition">
                         <i class="fas fa-shield-halved"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Free 1 Year Warranty</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Gratis Garansi mesin & transmisi selama 1 tahun setiap pembelian di Garage88 & GarasiAHA.</p>
-                    <ul class="space-y-3 text-xs text-slate-500">
+                    <ul class="space-y-3 text-xs text-slate-500 text-left">
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-accent"></i> Klaim Mudah & Cepat</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-accent"></i> Proteksi Mesin Total</li>
                     </ul>
                 </div>
 
-                <div class="glass p-8 rounded-[2rem] border-brand-accent/20 relative overflow-hidden">
+                <div class="glass p-6 md:p-8 rounded-[2rem] border-brand-accent/20 relative overflow-hidden text-center md:text-left">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-brand-accent/10 blur-[50px] -z-10"></div>
-                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400 text-xl md:text-2xl mb-6 mx-auto md:mx-0">
                         <i class="fas fa-truck-pickup"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3 text-gradient">24/7 Roadside Assistance</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Layanan darurat towing, jumper aki, ban serep, hingga pengisian BBM gratis di jalan.</p>
-                    <ul class="space-y-3 text-xs text-slate-500">
+                    <ul class="space-y-3 text-xs text-slate-500 text-left">
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-accent"></i> Towing Seluruh Indonesia</li>
                         <li class="flex items-center gap-2"><i class="fas fa-check text-brand-accent"></i> Emergency Support 24 Jam</li>
                     </ul>
                 </div>
 
-                <div class="glass p-8 rounded-[2rem] group hover:bg-white/5 transition-all">
-                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition">
+                <div class="glass p-6 md:p-8 rounded-[2rem] group hover:bg-white/5 transition-all text-center md:text-left">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-400 text-xl md:text-2xl mb-6 mx-auto md:mx-0 group-hover:scale-110 transition">
                         <i class="fas fa-map-location-dot"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">Home Test Drive</h3>
@@ -220,29 +218,29 @@
         </div>
     </section>
 
-    <section id="catalog" class="py-10 px-6">
-        <div class="max-w-6xl mx-auto glass p-10 rounded-[3rem] text-center relative overflow-hidden">
+    <section id="catalog" class="py-10 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto glass p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] text-center relative overflow-hidden">
             <div class="absolute top-0 right-0 w-64 h-64 bg-brand-accent/10 blur-[80px]"></div>
-            <h2 class="text-3xl font-bold text-white mb-4">Cek 120+ Unit Ready Stok</h2>
-            <p class="text-slate-400 mb-8">Katalog mobil bekas terupdate setiap hari melalui platform partner kami.</p>
-            <a href="https://borongboil.id/mike" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-brand-accent text-brand-dark px-10 py-4 rounded-2xl font-bold text-lg btn-hover">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Cek 120+ Unit Ready Stok</h2>
+            <p class="text-slate-400 mb-8 text-sm md:text-base">Katalog mobil bekas terupdate setiap hari melalui platform partner kami.</p>
+            <a href="https://borongboil.id/mike" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-brand-accent text-brand-dark px-8 md:px-10 py-4 rounded-2xl font-bold text-base md:text-lg btn-hover">
                 Buka Katalog Lengkap <i class="fas fa-external-link text-sm"></i>
             </a>
         </div>
     </section>
 
-    <section id="locations" class="py-20 px-6 bg-white/[0.02]">
-        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+    <section id="locations" class="py-16 md:py-20 px-6 bg-white/[0.02]">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-start">
             <div>
-                <h2 class="text-4xl font-bold text-white mb-6 leading-tight">Temukan Kami di <br><span class="text-brand-accent underline">8 Cabang Strategis</span></h2>
-                <p class="text-slate-400 mb-8 leading-relaxed">Kami hadir di Jakarta Timur, Barat, Selatan, hingga Tangerang untuk memberikan akses mudah bagi Anda melihat unit impian.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight text-center md:text-left">Temukan Kami di <br class="hidden md:block"><span class="text-brand-accent underline">8 Cabang Strategis</span></h2>
+                <p class="text-slate-400 mb-8 leading-relaxed text-sm md:text-base text-center md:text-left">Kami hadir di Jakarta Timur, Barat, Selatan, hingga Tangerang untuk memberikan akses mudah bagi Anda melihat unit impian.</p>
                 
                 <div class="space-y-4">
                     <details class="glass group rounded-2xl" open>
-                        <summary class="list-none p-6 flex justify-between items-center cursor-pointer font-bold text-white hover:text-brand-accent transition">
+                        <summary class="list-none p-5 md:p-6 flex justify-between items-center cursor-pointer font-bold text-white hover:text-brand-accent transition">
                             Garage88 (4 Cabang) <i class="fas fa-chevron-down text-xs transition"></i>
                         </summary>
-                        <div class="px-6 pb-6 space-y-4 text-sm text-slate-400">
+                        <div class="px-5 md:px-6 pb-6 space-y-4 text-sm text-slate-400">
                             <div class="p-4 border-l-2 border-brand-accent bg-white/5 rounded-r-xl">
                                 <p class="font-bold text-white mb-1">Garage88 Ciater, BSD</p>
                                 <p class="text-xs">Jl. Raya Bukit Sarua No.12, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten 15414</p>
@@ -267,13 +265,13 @@
                     </details>
 
                     <details class="glass group rounded-2xl">
-                        <summary class="list-none p-6 flex justify-between items-center cursor-pointer font-bold text-white hover:text-brand-accent transition">
+                        <summary class="list-none p-5 md:p-6 flex justify-between items-center cursor-pointer font-bold text-white hover:text-brand-accent transition">
                             Garasi AHA (4 Cabang) <i class="fas fa-chevron-down text-xs transition"></i>
                         </summary>
-                        <div class="px-6 pb-6 space-y-4 text-sm text-slate-400">
+                        <div class="px-5 md:px-6 pb-6 space-y-4 text-sm text-slate-400">
                              <div class="p-4 border-l-2 border-brand-accent bg-white/5 rounded-r-xl">
                                 <p class="font-bold text-white mb-1">Aha Gallery, Cipondoh</p>
-                                <p class="text-xs">Jl. Wijaya Kusuma 2 Jl. Banjar Wijaya No.32 Blok B45 no 31, Cipete, Kec. Pinang, Kota Tangerang</p>
+                                <p class="text-xs">Jl. Wijaya Kusuma 2 No.32 Blok B45 no 31, Cipete, Kec. Pinang, Kota Tangerang</p>
                                 <a href="https://maps.google.com/?q=AHA+Gallery+Cipondoh" target="_blank" rel="noopener" class="text-brand-accent text-[10px] uppercase font-bold mt-2 inline-block hover:underline">Petunjuk Jalan →</a>
                             </div>
                              <div class="p-4 border-l-2 border-slate-700 bg-white/5 rounded-r-xl hover:border-brand-accent transition">
@@ -295,26 +293,26 @@
                     </details>
                 </div>
             </div>
-            <div class="h-[500px] rounded-[3rem] overflow-hidden border-8 border-white/5 shadow-2xl">
-                <iframe title="Peta Lokasi Cabang Mikeitdeal" src="https://www.google.com/maps/d/u/0/embed?mid=1rMOZdXVpj7T1_xcl8tVdjQDy3kVWqoE&ehbc=2E312F&noprof=1&ll=-6.25372558518424%2C106.77189754999999&z=12" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="h-[300px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] overflow-hidden border-4 md:border-8 border-white/5 shadow-2xl">
+                <iframe title="Peta Lokasi Cabang Mikeitdeal" src="https://www.google.com/maps/d/u/0/embed?mid=1rMOZdXVpj7T1_xcl8tVdjQDy3kVWqoE&ehbc=2E312F&noprof=1&ll=-6.25372558518424%2C106.77189754999999&z=12" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer class="py-12 px-6 border-t border-white/5">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-center md:text-left flex items-center gap-4">
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center gap-4">
                 <img src="https://i.ibb.co.com/spZXHWYW/Mike-20260103-113228-0000.png" alt="Mikeitdeal Logo" class="h-12 w-12 rounded-full border border-brand-accent/20">
                 <div>
                     <div class="text-2xl font-black text-white uppercase mb-1">Mikeitdeal</div>
-                    <p class="text-sm text-slate-500 italic">New and Used Car Sales Expert since 2023</p>
+                    <p class="text-sm text-slate-500 italic">Mike - Garage88Barito</p>
                 </div>
             </div>
             
             <div class="flex gap-6 text-2xl">
                 <a href="https://instagram.com/mikeitdeal" target="_blank" rel="noopener" aria-label="Instagram" class="text-slate-500 hover:text-brand-accent transition"><i class="fab fa-instagram"></i></a>
                 <a href="https://tiktok.com/@mikeitdeal" target="_blank" rel="noopener" aria-label="TikTok" class="text-slate-500 hover:text-brand-accent transition"><i class="fab fa-tiktok"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=6285167064590&text=Halo+Sena%2C+saya+tertarik+dengan+mobil+%5B+Isi+%5D.+Apakah+unit+masih+ada+dan+bisa+cek+kondisinya%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-slate-500 hover:text-brand-accent transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=6285167064590&text=Halo+Sena%2C+saya+tertarik+dengan+mobil..." target="_blank" rel="noopener" aria-label="WhatsApp" class="text-slate-500 hover:text-brand-accent transition"><i class="fab fa-whatsapp"></i></a>
             </div>
 
             <div class="text-slate-600 text-[10px] uppercase tracking-[0.2em]">
@@ -327,8 +325,8 @@
        target="_blank" 
        rel="noopener" 
        aria-label="Chat WhatsApp"
-       class="floating-wa-btn fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-brand-accent rounded-full shadow-lg hover:translate-y-[-2px] transition-all duration-300">
-        <i class="fab fa-whatsapp text-white text-3xl"></i>
+       class="floating-wa-btn fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-brand-accent rounded-full shadow-lg transition-all duration-300">
+        <i class="fab fa-whatsapp text-white text-2xl md:text-3xl"></i>
     </a>
 
     <script>
